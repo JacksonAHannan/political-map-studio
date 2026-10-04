@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+dist/
+.cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.tsbuildinfo
+scripts/render-project.cjs
+output/
+.env
+.env.*
+*.egg-info/
+.firecrawl/
+vite.config.js
+vite.config.d.ts

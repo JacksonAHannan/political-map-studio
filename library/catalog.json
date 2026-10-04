@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "synthetic-demo",
+      "state": "Synthetic Demo",
+      "stateCode": "DEMO",
+      "year": 2026,
+      "race": "Fictional Governor Primary",
+      "office": "Governor",
+      "election": "Synthetic demonstration",
+      "date": "2026-05-19",
+      "geographyLevel": "Precinct",
+      "geometryVintage": "Six fictional polygons; no real precinct boundaries",
+      "source": "Original bundled synthetic fixtures; no actual election returns",
+      "path": "sample-data/precincts.geojson",
+      "keyField": "precinct_id",
+      "results": {
+        "path": "sample-data/results-wide.csv",
+        "keyField": "precinct_id"
+      },
+      "matchStatus": "synthetic-fixture",
+      "candidates": [
+        {
+          "id": "jones",
+          "column": "jones",
+          "displayName": "Demo Candidate A",
+          "color": "#145DA0"
+        },
+        {
+          "id": "boyd",
+          "column": "boyd",
+          "displayName": "Demo Candidate B",
+          "color": "#00A6A6"
+        },
+        {
+          "id": "flowers",
+          "column": "flowers",
+          "displayName": "Demo Candidate C",
+          "color": "#6C4AB6"
+        },
+        {
+          "id": "brown",
+          "column": "brown",
+          "displayName": "Demo Candidate D",
+          "color": "#D64F8A"
+        }
+      ]
+    }
+  ]
+}

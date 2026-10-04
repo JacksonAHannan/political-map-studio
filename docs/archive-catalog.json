@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "al-2000-amendment-2",
+      "state": "Alabama", "stateCode": "AL", "year": 2000,
+      "election": "General Election", "race": "Amendment 2", "office": "AMENDMENT 2 · INTERRACIAL MARRIAGE",
+      "date": "2000-11-07", "geographyLevel": "Precinct", "geometryVintage": "Census 2000 voting districts (VTD); 2000 Amendment 2 returns crosswalked onto 2000 VTD geometry (1,987 VTDs)",
+      "source": "Alabama Secretary of State 2000 general-election county precinct workbooks (66 workbooks, including the separately parsed Jefferson and Walker sources); returns crosswalked onto Census 2000 VTD geography",
+      "path": "outputs/alabama-2000-amendment-2/alabama-2000-amendment-2.gpkg", "layer": "amendment_2", "keyField": "GEOID10",
+      "results": {"path": "outputs/alabama-2000-amendment-2/precinct-results.csv", "keyField": "GEOID10", "note": "Published analytical VTD table: one row per Census 2000 VTD with the allocated Yes/No votes; the GeoPackage carries the same allocation."},
+      "crosswalk": {"path": "outputs/alabama-2000-amendment-2/precinct-crosswalk-audit.csv", "sourceField": "source_precinct", "targetField": "target_geoid", "nameField": "source_precinct", "countyField": "county", "acceptedField": "accepted", "acceptedValues": ["True"], "voteFields": {"yes": "sparks", "no": "lipscomb"}, "methodField": "method", "confidenceField": "confidence", "relationshipField": "relationship"},
+      "matchStatus": "reviewed-crosswalk",
+      "matchMethod": "2006 Agriculture Commissioner tiered method: county-constrained exact VTD code, exact normalized polling-place name, multi-evidence scoring (independent partisan fingerprint, turnout capacity, Black VAP share), reviewed alias tables and many-to-one aggregation of county reporting boxes.",
+      "matchAudit": "outputs/alabama-2000-amendment-2/precinct-crosswalk-audit.csv",
+      "sourceTotals": {"yes": 775416, "no": 537026},
+      "sourceTotalsLabel": "Certified statewide totals",
+      "sourceTotalsNote": "Certified statewide totals include absentee and provisional ballots that are not assignable to a VTD (24,184 Yes and 13,695 No votes); 1,772 of the 1,987 Census 2000 VTDs carry a recovered reporting unit and the remaining 215 VTDs have no recoverable Amendment 2 boxes.",
+      "unmatchedFix": "Every source reporting box is assigned to a VTD; absent and unassignable ballots are reported in render-audit.json rather than matched by the editor.",
+      "provenance": [
+        {"path": "outputs/alabama-2000-amendment-2/manifest.csv", "role": "bundle-manifest"},
+        {"path": "outputs/alabama-2000-amendment-2/README.md", "role": "documentation"},
+        {"path": "outputs/alabama-2000-amendment-2/map_spec.json", "role": "specification"},
+        {"path": "outputs/alabama-2000-amendment-2/render-audit.json", "role": "reconciliation"},
+        {"path": "outputs/alabama-2000-amendment-2/render-geometry-crosswalk.csv", "role": "display-crosswalk"},
+        {"path": "outputs/alabama-2000-amendment-2/render-margin-inference-audit.csv", "role": "display-inference-audit"},
+        {"path": "outputs/alabama-2000-amendment-2/unresolved-review-queue.csv", "role": "review-queue"},
+        {"path": "outputs/alabama-2000-amendment-2/most-likely-candidate-audit.csv", "role": "match-candidates"},
+        {"path": "outputs/alabama-2000-amendment-2/residual-optimizer-candidate-audit.csv", "role": "match-candidates"},
+        {"path": "outputs/alabama-2000-amendment-2/historical-bridge-candidate-audit.csv", "role": "match-candidates"},
+        {"path": "outputs/alabama-2000-amendment-2/forced-match-demographic-audit.csv", "role": "match-audit"},
+        {"path": "outputs/alabama-2000-amendment-2/birmingham-spatial-outlier-audit.csv", "role": "match-audit"}
+      ],
+      "preview": "outputs/alabama-2000-amendment-2/alabama-2000-amendment-2-margin-by-precinct.png",
+      "previewLabel": "Published 2000 Amendment 2 precinct margin",
+      "candidates": [
+        {"id":"yes","displayName":"Yes — repeal","column":"sparks","color":"#176B3A","lightColor":"#CBE7D1"},
+        {"id":"no","displayName":"No — keep","column":"lipscomb","color":"#8B3F0C","lightColor":"#F4C49B"}
+      ]
+    },
+    {
+      "id": "al-2000-president",
+      "state": "Alabama", "stateCode": "AL", "year": 2000,
+      "election": "General Election · major-party vote", "race": "President", "office": "PRESIDENT",
+      "date": "2000-11-07", "geographyLevel": "Precinct", "geometryVintage": "Census 2000 voting districts (VTD); 2000 presidential returns allocated onto the same 1,987-VTD geometry as Amendment 2",
+      "source": "Alabama 2000 certified presidential returns parsed from the county precinct workbooks and allocated with the same reviewed 2000 VTD crosswalk used for Amendment 2; major-party votes only",
+      "path": "outputs/alabama-2000-amendment-2/alabama-2000-amendment-2.gpkg", "layer": "amendment_2", "keyField": "GEOID10",
+      "results": {"path": "outputs/alabama-2000-presidential-amendment-2-crossovers/precinct-crossover-results.csv", "keyField": "GEOID10", "note": "Analytical allocation of the 2000 presidential returns: gore_allocated and bush_allocated per Census 2000 VTD. The published render layer merges same-place VTD fragments and fills 197 units with a nearest same-county display margin; those inferred colors are not votes and are not loaded here."},
+      "crosswalk": {"path": "outputs/alabama-2000-amendment-2/precinct-crosswalk-audit.csv", "sourceField": "source_precinct", "targetField": "target_geoid", "nameField": "source_precinct", "countyField": "county", "methodField": "method", "confidenceField": "confidence", "relationshipField": "relationship"},
+      "matchStatus": "crosswalked",
+      "matchMethod": "Same reviewed 2000 VTD crosswalk as the Amendment 2 reconstruction: 2,608 presidential source rows were allocated onto 1,987 Census 2000 VTDs with zero unmatched allocation units; 1,772 VTDs carry allocated votes and 197 render units show a nearest same-county display margin that is explicitly excluded from the loaded votes.",
+      "matchAudit": "outputs/alabama-2000-presidential-results/render-audit.json",
+      "sourceTotals": {"gore": 692611, "bush": 941173},
+      "sourceTotalsLabel": "Certified statewide major-party totals",
+      "sourceTotalsNote": "Certified statewide totals; 28,987 Gore and 40,643 Bush votes (absentee, provisional and federal-only ballots) are not assignable to a VTD, and the 32,488 votes for other candidates are not distributed to precincts.",
+      "unmatchedFix": "The allocation audit records zero unmatched presidential source units; unassignable absentee and provisional ballots are reported in render-audit.json instead of being matched by the editor.",
+      "provenance": [
+        {"path": "outputs/alabama-2000-presidential-results/render-audit.json", "role": "reconciliation"},
+        {"path": "outputs/alabama-2000-presidential-results/map_spec.json", "role": "specification"},
+        {"path": "outputs/alabama-2000-presidential-results/README.md", "role": "documentation"},
+        {"path": "outputs/alabama-2000-presidential-results/precinct-presidential-results.csv", "role": "render-results"},
+        {"path": "outputs/alabama-2000-presidential-amendment-2-crossovers/render-audit.json", "role": "crossover-audit"},
+        {"path": "outputs/alabama-2000-presidential-amendment-2-crossovers/map_spec.json", "role": "specification"},
+        {"path": "outputs/alabama-2000-presidential-amendment-2-crossovers/unmatched-presidential-source-units.csv", "role": "unmatched-audit"}
+      ],
+      "preview": "outputs/alabama-2000-presidential-results/alabama-2000-presidential-results-by-precinct.png",
+      "previewLabel": "Published 2000 presidential precinct margin",
+      "candidates": [
+        {"id":"gore","displayName":"Al Gore","column":"gore_allocated","color":"#3978B8","lightColor":"#B8D4E8"},
+        {"id":"bush","displayName":"George W. Bush","column":"bush_allocated","color":"#B94F55","lightColor":"#E8B8B0"}
+      ]
+    },
+    {
+      "id": "al-2006-agriculture-commissioner",
+      "state": "Alabama", "stateCode": "AL", "year": 2006,
+      "election": "General Election", "race": "Agriculture Commissioner", "office": "AGRICULTURE COMMISSIONER",
+      "date": "2006-11-07", "geographyLevel": "Precinct", "geometryVintage": "Census 2000 voting districts (VTD); 2006 county reporting units crosswalked onto 2000 VTD geometry (1,987 VTDs). No official November 2006 precinct boundary file exists for Alabama",
+      "source": "Alabama 2006 general-election county precinct workbooks (Agriculture Commissioner contest); reconstructed and audited 2006-to-2000 VTD crosswalk with reviewed alias, geocoded and iterative tiers",
+      "path": "outputs/alabama-2006-agriculture-commissioner/alabama-2006-agriculture-commissioner.gpkg", "layer": "precinct_results", "keyField": "GEOID10",
+      "results": {"path": "outputs/alabama-2006-agriculture-commissioner/precinct-results.csv", "keyField": "GEOID10", "note": "Published analytical VTD table: one row per Census 2000 VTD with the allocated Sparks/Lipscomb votes."},
+      "crosswalk": {"path": "outputs/alabama-2006-agriculture-commissioner/precinct-crosswalk-audit.csv", "sourceField": "source_precinct", "targetField": "target_geoid", "nameField": "source_precinct", "countyField": "county", "acceptedField": "accepted", "acceptedValues": ["True"], "voteFields": {"sparks": "sparks", "lipscomb": "lipscomb"}, "methodField": "method", "confidenceField": "confidence", "relationshipField": "relationship"},
+      "matchStatus": "reviewed-crosswalk",
+      "matchMethod": "County-constrained 2006-to-2000 VTD reconstruction: exact VTD code, exact normalized polling-place name, multi-evidence scoring (other-contest fingerprint, Black VAP share, ballots-to-VAP plausibility), reviewed relocation aliases, geocoded historical addresses and residual optimizer tiers. Unresolved returns are never forced onto a polygon.",
+      "matchAudit": "outputs/alabama-2006-agriculture-commissioner/precinct-crosswalk-audit.csv",
+      "sourceTotals": {"sparks": 681835, "lipscomb": 472322},
+      "sourceTotalsLabel": "Recovered reporting-box totals from 66 counties, not certified statewide totals",
+      "incompleteElection": true,
+      "sourceTotalsNote": "Sum of all 2,263 source reporting boxes in precinct-crosswalk-audit.csv (the 66 county workbooks): the accepted 2,250 boxes carry 678,218 Sparks votes and 469,269 Lipscomb votes onto 1,746 of the 1,987 VTDs. Absentee and provisional ballots and the missing Coosa County agriculture-commissioner contest are outside precinct geography.",
+      "unmatchedFix": "The 13 unassigned source boxes (Butler, Calhoun, Conecuh, DeKalb, Hale, Lawrence, Lee, Russell, Shelby) are listed with their votes in precinct-crosswalk-audit.csv as needs-review. Assign them upstream and regenerate the crosswalk; the editor never re-matches precinct names.",
+      "provenance": [
+        {"path": "outputs/alabama-2006-agriculture-commissioner/manifest.csv", "role": "bundle-manifest"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/README.md", "role": "documentation"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/map_spec.json", "role": "specification"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/provenance.json", "role": "provenance"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/direct-geocoding-summary.json", "role": "geocoding"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/direct-geocoding-candidate-audit.csv", "role": "geocoding"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/demographic-mismatch-rematch-audit.csv", "role": "match-audit"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/render-geometry-crosswalk.csv", "role": "display-crosswalk"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/render-margin-inference-audit.csv", "role": "display-inference-audit"},
+        {"path": "outputs/alabama-2006-agriculture-commissioner/vtd-area-allocation-audit.csv", "role": "allocation-audit"}
+      ],
+      "preview": "outputs/alabama-2006-agriculture-commissioner/alabama-2006-agriculture-commissioner-margin-by-precinct.png",
+      "previewLabel": "Published 2006 Agriculture Commissioner margin",
+      "candidates": [
+        {"id":"sparks","displayName":"Ron Sparks","column":"sparks","color":"#2878B5","lightColor":"#B8D4E8"},
+        {"id":"lipscomb","displayName":"Albert Lipscomb","column":"lipscomb","color":"#B44B4B","lightColor":"#E8C1BC"}
+      ]
+    },
+    {
+      "id": "al-2017-us-senate-special",
+      "state": "Alabama", "stateCode": "AL", "year": 2017,
+      "election": "Special General Election", "race": "U.S. Senate", "office": "U.S. SENATE",
+      "date": "2017-12-12", "geographyLevel": "Precinct", "geometryVintage": "VEST 2017 precincts",
+      "source": "VEST 2017 Alabama precinct returns and boundaries",
+      "path": "outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election.gpkg", "layer": "precinct_results", "keyField": "GEOID17",
+      "preview": "outputs/alabama-2017-senate-special-election/alabama-2017-senate-special-election-margin-by-precinct.png",
+      "matchStatus": "source-integrated",
+      "candidates": [
+        {"id":"jones","displayName":"Doug Jones","column":"jones","color":"#145DA0","lightColor":"#B8D4E8"},
+        {"id":"moore","displayName":"Roy Moore","column":"moore","color":"#8E2828","lightColor":"#E8B8B0"}
+      ]
+    },
+    {
+      "id": "al-2026-us-senate-primary-democratic",
+      "state": "Alabama", "stateCode": "AL", "year": 2026,
+      "election": "Primary · May 19", "race": "U.S. Senate (Democratic)", "office": "U.S. SENATE · DEMOCRATIC PRIMARY",
+      "date": "2026-05-19", "geographyLevel": "Precinct", "geometryVintage": "2024 statewide election precinct layer (congressional-split derivative, 1,979 features); 2026 returns joined onto 2024 precinct polygons",
+      "source": "Alabama Secretary of State 2026 primary county workbooks; every 2026 polling-place return matched to a 2024 precinct polygon by the shared reviewed 2026 crosswalk",
+      "path": "alabama/data/geospatial/election-precincts/al-2024-gen-prec/al-2024-gen-cong-prec/al-2024-gen-cong-prec.shp", "keyField": "UNIQUE_ID",
+      "results": {"path": "outputs/alabama-2026-us-senate-primary/precinct-results-democratic.csv", "keyField": "UNIQUE_ID", "note": "Published 2026 result polygons: one row per 2024 precinct polygon with the four Democratic Senate candidates, winner and match score. Rows flagged matched=false are 2024 polygons that received no standalone 2026 return."},
+      "crosswalk": {"path": "outputs/alabama-2026-us-senate-primary/shared-precinct-crosswalk.csv", "sourceField": "source_precinct", "targetField": "geometry_precinct", "methodField": "method"},
+      "matchStatus": "reviewed-crosswalk",
+      "matchMethod": "Shared 2026 return-to-2024-precinct crosswalk applied identically to both party contests: verified polling-place aliases and relocations from Alabama CD-5, exact and high-confidence normalized labels, unique official precinct numbers, county change notices and polling lists, geocoded current addresses, and a reviewed nearest-polygon assignment for renamed locations. Absentee and provisional labels are excluded from geography, and Jefferson precincts 3010 and 3015 form one 2026 reporting unit.",
+      "matchAudit": "outputs/alabama-2026-us-senate-primary/precinct-match-audit-democratic.csv",
+      "sourceTotals": {"larriett": 99260, "sweetser": 47425, "wess": 134895, "wheeler": 59354},
+      "sourceTotalsLabel": "Official statewide Democratic primary totals",
+      "sourceTotalsNote": "Official statewide Democratic primary totals from the county workbooks; absentee and provisional ballots are not assignable to precinct geography.",
+      "unmatchedFix": "The Jefferson PREC 3010/3015 combined 2026 reporting unit covers two separate 2024 polygons. Its votes remain in totals without a fabricated polygon. The existing custom 2026 analytical layer merges this unit, but its all-precinct keys differ from these published congressional-split result keys; it is not substituted silently.",
+      "provenance": [
+        {"path": "outputs/alabama-2026-us-senate-primary/candidate-totals.csv", "role": "official-totals"},
+        {"path": "outputs/alabama-2026-us-senate-primary/match-coverage.csv", "role": "reconciliation"},
+        {"path": "outputs/alabama-2026-us-senate-primary/manifest.csv", "role": "bundle-manifest"},
+        {"path": "outputs/alabama-2026-us-senate-primary/README.md", "role": "documentation"},
+        {"path": "outputs/alabama-2026-us-senate-primary/map_spec.json", "role": "specification"},
+        {"path": "outputs/alabama-2026-us-senate-primary/dual-allocation-empty-polygon-review.csv", "role": "match-audit"},
+        {"path": "outputs/alabama-2026-us-senate-primary/unresolved-precincts-democratic.csv", "role": "unmatched-audit"}
+      ],
+      "preview": "outputs/alabama-2026-us-senate-primary/maps/alabama-2026-us-senate-democratic-primary.png",
+      "previewLabel": "Published 2026 Democratic Senate primary",
+      "candidates": [
+        {"id":"larriett","displayName":"Dakarai Larriett","column":"Dakarai Larriett","color":"#2878B5","lightColor":"#B8D4E8"},
+        {"id":"sweetser","displayName":"Kyle Sweetser","column":"Kyle Sweetser","color":"#7A4FA3","lightColor":"#D6C9E6"},
+        {"id":"wess","displayName":"Everett Wess","column":"Everett Wess","color":"#2E8B6F","lightColor":"#BFE3D6"},
+        {"id":"wheeler","displayName":"Mark S. Wheeler II","column":"Mark S. Wheeler II","color":"#B4762A","lightColor":"#EBD3AE"}
+      ]
+    },
+    {
+      "id": "al-2026-us-senate-primary-republican",
+      "state": "Alabama", "stateCode": "AL", "year": 2026,
+      "election": "Primary · May 19", "race": "U.S. Senate (Republican)", "office": "U.S. SENATE · REPUBLICAN PRIMARY",
+      "date": "2026-05-19", "geographyLevel": "Precinct", "geometryVintage": "2024 statewide election precinct layer (congressional-split derivative, 1,979 features); 2026 returns joined onto 2024 precinct polygons",
+      "source": "Alabama Secretary of State 2026 primary county workbooks; every 2026 polling-place return matched to a 2024 precinct polygon by the shared reviewed 2026 crosswalk",
+      "path": "alabama/data/geospatial/election-precincts/al-2024-gen-prec/al-2024-gen-cong-prec/al-2024-gen-cong-prec.shp", "keyField": "UNIQUE_ID",
+      "results": {"path": "outputs/alabama-2026-us-senate-primary/precinct-results-republican.csv", "keyField": "UNIQUE_ID", "note": "Published 2026 result polygons: one row per 2024 precinct polygon with the seven Republican Senate candidates, winner and match score. Rows flagged matched=false are 2024 polygons that received no standalone 2026 return."},
+      "crosswalk": {"path": "outputs/alabama-2026-us-senate-primary/shared-precinct-crosswalk.csv", "sourceField": "source_precinct", "targetField": "geometry_precinct", "methodField": "method"},
+      "matchStatus": "reviewed-crosswalk",
+      "matchMethod": "Shared 2026 return-to-2024-precinct crosswalk applied identically to both party contests: verified polling-place aliases and relocations from Alabama CD-5, exact and high-confidence normalized labels, unique official precinct numbers, county change notices and polling lists, geocoded current addresses, and a reviewed nearest-polygon assignment for renamed locations. Absentee and provisional labels are excluded from geography, and Jefferson precincts 3010 and 3015 form one 2026 reporting unit.",
+      "matchAudit": "outputs/alabama-2026-us-senate-primary/precinct-match-audit-republican.csv",
+      "sourceTotals": {"burton": 15142, "deas": 10118, "hudson": 123672, "marshall": 118361, "moore": 189067, "murphy": 6485, "walker": 19697},
+      "sourceTotalsLabel": "Official statewide Republican primary totals",
+      "sourceTotalsNote": "Official statewide Republican primary totals from the county workbooks; absentee and provisional ballots are not assignable to precinct geography.",
+      "unmatchedFix": "The Jefferson PREC 3010/3015 combined 2026 reporting unit covers two separate 2024 polygons. Its votes remain in totals without a fabricated polygon. The existing custom 2026 analytical layer merges this unit, but its all-precinct keys differ from these published congressional-split result keys; it is not substituted silently.",
+      "provenance": [
+        {"path": "outputs/alabama-2026-us-senate-primary/candidate-totals.csv", "role": "official-totals"},
+        {"path": "outputs/alabama-2026-us-senate-primary/match-coverage.csv", "role": "reconciliation"},
+        {"path": "outputs/alabama-2026-us-senate-primary/manifest.csv", "role": "bundle-manifest"},
+        {"path": "outputs/alabama-2026-us-senate-primary/README.md", "role": "documentation"},
+        {"path": "outputs/alabama-2026-us-senate-primary/map_spec.json", "role": "specification"},
+        {"path": "outputs/alabama-2026-us-senate-primary/dual-allocation-empty-polygon-review.csv", "role": "match-audit"},
+        {"path": "outputs/alabama-2026-us-senate-primary/unresolved-precincts-republican.csv", "role": "unmatched-audit"}
+      ],
+      "preview": "outputs/alabama-2026-us-senate-primary/maps/alabama-2026-us-senate-republican-primary.png",
+      "previewLabel": "Published 2026 Republican Senate primary",
+      "candidates": [
+        {"id":"moore","displayName":"Barry Moore","column":"Barry Moore","color":"#B43A3A","lightColor":"#E8B8B0"},
+        {"id":"hudson","displayName":"Jared Hudson","column":"Jared Hudson","color":"#8B5E3C","lightColor":"#E0CBB4"},
+        {"id":"marshall","displayName":"Steve Marshall","column":"Steve Marshall","color":"#3A6EA5","lightColor":"#BFD3E8"},
+        {"id":"walker","displayName":"Rodney Walker","column":"Rodney Walker","color":"#6B8E23","lightColor":"#D3E0B4"},
+        {"id":"burton","displayName":"Seth Burton","column":"Seth Burton","color":"#7A4FA3","lightColor":"#D6C9E6"},
+        {"id":"deas","displayName":"Dale Shelton Deas Jr.","column":"Dale Shelton Deas Jr.","color":"#2E8B6F","lightColor":"#BFE3D6"},
+        {"id":"murphy","displayName":"Morgan Murphy","column":"Morgan Murphy","color":"#777777","lightColor":"#D4D4D4"}
+      ]
+    },
+    {
+      "id": "pa-2026-hd12-special",
+      "state": "Pennsylvania", "stateCode": "PA", "year": 2026,
+      "election": "Special Election", "race": "State House District 12", "office": "STATE HOUSE · DISTRICT 12",
+      "date": "2026-03-17", "geographyLevel": "Precinct", "geometryVintage": "2026 HD-12 precinct geography",
+      "source": "Pennsylvania HD-12 special election precinct returns and matched precinct geography",
+      "path": "outputs/pennsylvania-hd12-2026-special-swing/pennsylvania-hd12-2026-special-swing.gpkg", "layer": "precinct_swing", "keyField": "GEOID",
+      "preview": "outputs/pennsylvania-hd12-2026-special-swing/pennsylvania-hd12-2026-special-results-wikipedia-palette.png",
+      "matchStatus": "source-integrated",
+      "candidates": [
+        {"id":"dukes","displayName":"Dukes","column":"dukes","color":"#2878B5","lightColor":"#B8D4E8"},
+        {"id":"timko","displayName":"Timko","column":"timko","color":"#B43A3A","lightColor":"#E8B8B0"},
+        {"id":"write-in","displayName":"Write-in","column":"write_in_2026","color":"#777777","lightColor":"#D4D4D4"}
+      ]
+    },
+    {
+      "id": "pa-2024-hd12-president",
+      "state": "Pennsylvania", "stateCode": "PA", "year": 2024,
+      "election": "General Election · major-party vote", "race": "President in House District 12", "office": "PRESIDENT · DISTRICT 12",
+      "date": "2024-11-05", "geographyLevel": "Precinct", "geometryVintage": "2026 HD-12 precinct geography",
+      "source": "Matched 2024 Harris and Trump votes in the Pennsylvania HD-12 comparison dataset; major-party votes only",
+      "path": "outputs/pennsylvania-hd12-2026-special-swing/pennsylvania-hd12-2026-special-swing.gpkg", "layer": "precinct_swing", "keyField": "GEOID",
+      "preview": "outputs/pennsylvania-hd12-2026-special-swing/pennsylvania-hd12-2024-president-house-and-2026-special-comparison.png",
+      "previewLabel": "Published multi-election comparison",
+      "matchStatus": "source-integrated",
+      "candidates": [
+        {"id":"harris","displayName":"Kamala Harris","column":"harris","color":"#2878B5","lightColor":"#B8D4E8"},
+        {"id":"trump","displayName":"Donald Trump","column":"trump","color":"#B43A3A","lightColor":"#E8B8B0"}
+      ]
+    },
+    {
+      "id": "tn-2016-president",
+      "state": "Tennessee", "stateCode": "TN", "year": 2016,
+      "election": "General Election", "race": "President", "office": "PRESIDENT",
+      "date": "2016-11-08", "geographyLevel": "Precinct", "geometryVintage": "2016 returns crosswalked to 2024 precincts",
+      "source": "Tennessee 2016 presidential returns crosswalked to 2024 precinct geography",
+      "path": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-swing-2016-2024.gpkg", "layer": "precinct_swing", "keyField": "UNIQUE_ID",
+      "preview": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png",
+      "previewLabel": "Published 2016–2024 swing comparison",
+      "matchStatus": "crosswalked", "matchAudit": "outputs/tennessee-2016-2024-presidential-swing/tennessee-2016-to-2024-precinct-crosswalk.csv",
+      "candidates": [
+        {"id":"clinton","displayName":"Hillary Clinton","column":"clinton_2016","color":"#2878B5","lightColor":"#B8D4E8"},
+        {"id":"trump","displayName":"Donald Trump","column":"trump_2016","color":"#B43A3A","lightColor":"#E8B8B0"}
+      ]
+    },
+    {
+      "id": "tn-2024-president",
+      "state": "Tennessee", "stateCode": "TN", "year": 2024,
+      "election": "General Election", "race": "President", "office": "PRESIDENT",
+      "date": "2024-11-05", "geographyLevel": "Precinct", "geometryVintage": "2024 precincts",
+      "source": "Tennessee 2024 presidential precinct returns and boundaries",
+      "path": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-swing-2016-2024.gpkg", "layer": "precinct_swing", "keyField": "UNIQUE_ID",
+      "preview": "outputs/tennessee-2016-2024-presidential-swing/tennessee-presidential-shift-2016-2024.png",
+      "previewLabel": "Published 2016–2024 swing comparison",
+      "matchStatus": "source-integrated",
+      "candidates": [
+        {"id":"harris","displayName":"Kamala Harris","column":"G24PREDHAR","color":"#2878B5","lightColor":"#B8D4E8"},
+        {"id":"trump","displayName":"Donald Trump","column":"G24PRERTRU","color":"#B43A3A","lightColor":"#E8B8B0"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{"type":"FeatureCollection","name":"synthetic_precincts","crs":{"type":"name","properties":{"name":"EPSG:3857"}},"features":[
+{"type":"Feature","properties":{"precinct_id":"P1","county":"North","name":"Huntsville"},"geometry":{"type":"Polygon","coordinates":[[[80,80],[240,70],[230,260],[70,250],[80,80]]]}},
+{"type":"Feature","properties":{"precinct_id":"P2","county":"North","name":"Northeast"},"geometry":{"type":"Polygon","coordinates":[[[240,70],[390,65],[400,250],[230,260],[240,70]]]}},
+{"type":"Feature","properties":{"precinct_id":"P3","county":"Central","name":"Birmingham"},"geometry":{"type":"Polygon","coordinates":[[[70,250],[230,260],[220,460],[55,450],[70,250]]]}},
+{"type":"Feature","properties":{"precinct_id":"P4","county":"Central","name":"East Central"},"geometry":{"type":"Polygon","coordinates":[[[230,260],[400,250],[420,455],[220,460],[230,260]]]}},
+{"type":"Feature","properties":{"precinct_id":"P5","county":"South","name":"Mobile"},"geometry":{"type":"Polygon","coordinates":[[[55,450],[220,460],[210,650],[90,700],[55,450]]]}},
+{"type":"Feature","properties":{"precinct_id":"P6","county":"South","name":"Wiregrass"},"geometry":{"type":"Polygon","coordinates":[[[220,460],[420,455],[395,650],[300,675],[210,650],[220,460]]]}}
+]}

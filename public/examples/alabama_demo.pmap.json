@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "id": "alabama-demo",
+  "name": "Synthetic Governor Primary",
+  "modifiedAt": "2026-08-21T22:00:00Z",
+  "metadata": {
+    "title": "Synthetic Governor Primary by Precinct",
+    "subtitle": "Precinct winner and winner-over-runner-up margin \u00b7 May 19, 2026",
+    "office": "Governor",
+    "electionDate": "2026-05-19",
+    "electionType": "DEMOCRATIC PRIMARY",
+    "jurisdiction": "Synthetic Demo",
+    "source": "Original synthetic fixture; no actual election returns.",
+    "notes": [
+      "Synthetic demonstration data for editor testing."
+    ]
+  },
+  "page": {
+    "width": 1400,
+    "height": 1200,
+    "unit": "px",
+    "dpi": 220,
+    "background": "#F4F1E9",
+    "bleed": 0,
+    "safeMargin": 28,
+    "grid": {
+      "enabled": false,
+      "size": 10,
+      "snap": true
+    }
+  },
+  "layoutId": "alabama-precinct-layout",
+  "themeId": "publication-dark-header",
+  "data": {
+    "resultsFormat": "wide",
+    "join": {
+      "resultField": "precinct_id",
+      "geographyField": "precinct_id"
+    },
+    "fields": {
+      "county": "county",
+      "precinctName": "name"
+    },
+    "writeIns": "exclude",
+    "candidates": [
+      {
+        "id": "jones",
+        "sourceNames": [
+          "Doug Jones"
+        ],
+        "displayName": "Demo Candidate A",
+        "shortName": "Candidate A",
+        "color": "#145DA0",
+        "lightColor": "#B9D2E6",
+        "visible": true,
+        "order": 0
+      },
+      {
+        "id": "boyd",
+        "sourceNames": [
+          "Will Boyd"
+        ],
+        "displayName": "Demo Candidate B",
+        "shortName": "Candidate B",
+        "color": "#00A6A6",
+        "lightColor": "#B8E4E1",
+        "visible": true,
+        "order": 1
+      },
+      {
+        "id": "flowers",
+        "sourceNames": [
+          "Chad Flowers"
+        ],
+        "displayName": "Demo Candidate C",
+        "shortName": "Candidate C",
+        "color": "#6C4AB6",
+        "lightColor": "#D4C8EA",
+        "visible": true,
+        "order": 2
+      },
+      {
+        "id": "brown",
+        "sourceNames": [
+          "Shomari Figures"
+        ],
+        "displayName": "Demo Candidate D",
+        "shortName": "Candidate D",
+        "color": "#D64F8A",
+        "lightColor": "#F0C5D7",
+        "visible": true,
+        "order": 3
+      }
+    ]
+  },
+  "theme": {
+    "id": "publication-dark-header",
+    "name": "Publication dark header",
+    "colors": {
+      "page": "#F4F1E9",
+      "ink": "#182329",
+      "muted": "#677178",
+      "panel": "#FBFAF6",
+      "header": "#17242A",
+      "border": "#27343C",
+      "noData": "#D7D9D7",
+      "unopposed": "#A6AAAB"
+    },
+    "fonts": {
+      "serif": "Nimbus Roman, Georgia, serif",
+      "sans": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+      "data": "Nimbus Sans Narrow, Arial Narrow, sans-serif"
+    },
+    "border": {
+      "color": "#27343C",
+      "width": 1,
+      "opacity": 0.9
+    }
+  },
+  "elements": [],
+  "renderData": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "P1",
+        "properties": {
+          "__joinKey": "P1",
+          "county": "North"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                80,
+                80
+              ],
+              [
+                240,
+                70
+              ],
+              [
+                230,
+                260
+              ],
+              [
+                70,
+                250
+              ],
+              [
+                80,
+                80
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "P2",
+        "properties": {
+          "__joinKey": "P2",
+          "county": "North"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                240,
+                70
+              ],
+              [
+                390,
+                65
+              ],
+              [
+                400,
+                250
+              ],
+              [
+                230,
+                260
+              ],
+              [
+                240,
+                70
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "P3",
+        "properties": {
+          "__joinKey": "P3",
+          "county": "Central"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                70,
+                250
+              ],
+              [
+                230,
+                260
+              ],
+              [
+                220,
+                460
+              ],
+              [
+                55,
+                450
+              ],
+              [
+                70,
+                250
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "P4",
+        "properties": {
+          "__joinKey": "P4",
+          "county": "Central"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                230,
+                260
+              ],
+              [
+                400,
+                250
+              ],
+              [
+                420,
+                455
+              ],
+              [
+                220,
+                460
+              ],
+              [
+                230,
+                260
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "P5",
+        "properties": {
+          "__joinKey": "P5",
+          "county": "South"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                55,
+                450
+              ],
+              [
+                220,
+                460
+              ],
+              [
+                210,
+                650
+              ],
+              [
+                90,
+                700
+              ],
+              [
+                55,
+                450
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "P6",
+        "properties": {
+          "__joinKey": "P6",
+          "county": "South"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                220,
+                460
+              ],
+              [
+                420,
+                455
+              ],
+              [
+                395,
+                650
+              ],
+              [
+                300,
+                675
+              ],
+              [
+                210,
+                650
+              ],
+              [
+                220,
+                460
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "records": [
+      {
+        "key": "P1",
+        "name": "Huntsville",
+        "county": "North",
+        "totalVotes": 1000,
+        "winnerId": "jones",
+        "runnerUpId": "boyd",
+        "margin": 0.42,
+        "values": {},
+        "candidateVotes": {
+          "jones": 610,
+          "boyd": 190,
+          "flowers": 130,
+          "brown": 70
+        }
+      },
+      {
+        "key": "P2",
+        "name": "Northeast",
+        "county": "North",
+        "totalVotes": 800,
+        "winnerId": "flowers",
+        "runnerUpId": "jones",
+        "margin": 0.15,
+        "values": {},
+        "candidateVotes": {
+          "jones": 240,
+          "boyd": 90,
+          "flowers": 360,
+          "brown": 110
+        }
+      },
+      {
+        "key": "P3",
+        "name": "Birmingham",
+        "county": "Central",
+        "totalVotes": 1400,
+        "winnerId": "jones",
+        "runnerUpId": "brown",
+        "margin": 0.51,
+        "values": {},
+        "candidateVotes": {
+          "jones": 910,
+          "boyd": 90,
+          "flowers": 85,
+          "brown": 315
+        }
+      },
+      {
+        "key": "P4",
+        "name": "East Central",
+        "county": "Central",
+        "totalVotes": 900,
+        "winnerId": "boyd",
+        "runnerUpId": "jones",
+        "margin": 0.12,
+        "values": {},
+        "candidateVotes": {
+          "jones": 280,
+          "boyd": 388,
+          "flowers": 150,
+          "brown": 82
+        }
+      },
+      {
+        "key": "P5",
+        "name": "Mobile",
+        "county": "South",
+        "totalVotes": 1100,
+        "winnerId": "brown",
+        "runnerUpId": "jones",
+        "margin": 0.18,
+        "values": {},
+        "candidateVotes": {
+          "jones": 350,
+          "boyd": 100,
+          "flowers": 102,
+          "brown": 548
+        }
+      },
+      {
+        "key": "P6",
+        "name": "Wiregrass",
+        "county": "South",
+        "totalVotes": 700,
+        "winnerId": "jones",
+        "runnerUpId": "boyd",
+        "margin": 0.09,
+        "values": {},
+        "candidateVotes": {
+          "jones": 300,
+          "boyd": 237,
+          "flowers": 98,
+          "brown": 65
+        }
+      }
+    ],
+    "diagnostics": [],
+    "bounds": [
+      55,
+      65,
+      420,
+      700
+    ],
+    "crs": "LOCAL_SAMPLE",
+    "sourceHashes": {}
+  },
+  "export": {
+    "formats": [
+      "svg",
+      "png",
+      "pdf"
+    ],
+    "textAsPaths": false,
+    "embedMetadata": true
+  }
+}

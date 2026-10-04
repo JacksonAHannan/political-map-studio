@@ -1,0 +1,342 @@
+{
+  "snapshot_date": "2026-10-03",
+  "original_project": "Election-Maps/political-map-studio",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "c2a499c30b58c1e8c01e1b1a6349b9c822d9ac1e22ce50cc4e5f62b130281216",
+      "original_sha256": "44a0063e53dd6046381e5c2ad7c48784bbce1156a2e7f2effdad12607a1aa7e2",
+      "unchanged": false
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "54af9e2650af0079c8c04ddcc9a38fdb4d3aa0acc6bfd1b47d93a5b67ae79a75"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e5e9fd6f3939a2f3b53f1b8a0b590a413bb13233d5182d6d7b28938a489570b3",
+      "original_sha256": "56a63c18220e9b1f57e19bba169582484f79f19007d0d0e5c5f85417f7455df7",
+      "unchanged": false
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "10ff7388425b9144cb1687a29e9c9aad3b802c38508d3fe92ec0cb44c1524759",
+      "original_sha256": "10ff7388425b9144cb1687a29e9c9aad3b802c38508d3fe92ec0cb44c1524759",
+      "unchanged": true
+    },
+    {
+      "path": "backend/political_map_studio/__init__.py",
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "original_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "unchanged": true
+    },
+    {
+      "path": "backend/political_map_studio/app.py",
+      "sha256": "e41704420363cc8fe12ecce20fb4b3d6e5d0810fa77bfcec00035efcebf7607a",
+      "original_sha256": "e41704420363cc8fe12ecce20fb4b3d6e5d0810fa77bfcec00035efcebf7607a",
+      "unchanged": true
+    },
+    {
+      "path": "backend/political_map_studio/cli.py",
+      "sha256": "8406f54bea5a6bcadce9370b38f7244cf8648c24219c35b64028c8690e94c0f3",
+      "original_sha256": "8406f54bea5a6bcadce9370b38f7244cf8648c24219c35b64028c8690e94c0f3",
+      "unchanged": true
+    },
+    {
+      "path": "backend/political_map_studio/library.py",
+      "sha256": "b78207f983af8e5a2dd28f857f55f032658c240b7f16ec893ca787d796529b59",
+      "original_sha256": "39891ada6dec6536eeb780f1ae15aac1cbf66345e745a669ee1f66807a55edce",
+      "unchanged": false
+    },
+    {
+      "path": "backend/political_map_studio/processing.py",
+      "sha256": "32480198e6f29fd6dff3f934ffdb2e63587d4e4eb00b26da278007f61c8a4c67",
+      "original_sha256": "32480198e6f29fd6dff3f934ffdb2e63587d4e4eb00b26da278007f61c8a4c67",
+      "unchanged": true
+    },
+    {
+      "path": "docs/ARCHIVE_WORKFLOW.md",
+      "sha256": "56a63c18220e9b1f57e19bba169582484f79f19007d0d0e5c5f85417f7455df7"
+    },
+    {
+      "path": "docs/PROJECT_SCHEMA.md",
+      "sha256": "be4a972c119c51c139ccb0618dffcfb3651e3bbd31e83f72454983af322d7bb4",
+      "original_sha256": "be4a972c119c51c139ccb0618dffcfb3651e3bbd31e83f72454983af322d7bb4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "sha256": "405ed2ddfae446e9878d036e3bed336a0839828e37cd649dfa0ea2c3da2a217f"
+    },
+    {
+      "path": "docs/archive-catalog.json",
+      "sha256": "a441715881caab796bec7ae4f1e92a23cb29163ce02f39e2f97f728e2c84a846"
+    },
+    {
+      "path": "docs/demo.png",
+      "sha256": "ed970c3b6e60770fde5ea474c6f27e9ec6c6c0d6a1c553112950f25733b932de"
+    },
+    {
+      "path": "docs/editor.png",
+      "sha256": "dbc876d0af3c82a4e37c97159b8b1f9b3cd2e4526188cd44010a9f9b20f3d200"
+    },
+    {
+      "path": "index.html",
+      "sha256": "23e60fce7dab9dbc54fc994e3091bf6f6f5ff27bc24c5df3d045764a6b9f3760",
+      "original_sha256": "23e60fce7dab9dbc54fc994e3091bf6f6f5ff27bc24c5df3d045764a6b9f3760",
+      "unchanged": true
+    },
+    {
+      "path": "library/catalog.json",
+      "sha256": "1728799f4aa369eba3388d3ed1f68930cd236cd2fce2351b5f53c2050095aeee",
+      "original_sha256": "a441715881caab796bec7ae4f1e92a23cb29163ce02f39e2f97f728e2c84a846",
+      "unchanged": false
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5bd4bc47cc3560e2f2df74384e9b4749ea8219f597931b11d8c4845bd8346aa4",
+      "original_sha256": "4eb2152c35b837e8115e6cb616ee9e64a347d53be44ad58665bd9be11eafefcb",
+      "unchanged": false
+    },
+    {
+      "path": "package.json",
+      "sha256": "c65dec5af0c1b74765f718aafc4a6388b10323a26f5d1f21b4993b67ea04f5cb",
+      "original_sha256": "c65dec5af0c1b74765f718aafc4a6388b10323a26f5d1f21b4993b67ea04f5cb",
+      "unchanged": true
+    },
+    {
+      "path": "public/examples/alabama_demo.pmap.json",
+      "sha256": "70e71f827cef89f3d020ef296c413f99b0b6d47460e3b4c555ba4010ec448c20",
+      "original_sha256": "07c3b32eaae5a5be7ebd29e56c06fbe74d9fde7d52ae837eeee789d6c682ad41",
+      "unchanged": false
+    },
+    {
+      "path": "public/templates/alabama_editorial.json",
+      "sha256": "174ede105458b8f7705932c994394b08b63919d9b70c7f883837b0cf9c508cd7",
+      "original_sha256": "0ebaa76e9c05e473111832d75f26269e367b5a43a683552515167bb08952311e",
+      "unchanged": false
+    },
+    {
+      "path": "public/themes/publication_dark_header.json",
+      "sha256": "388990757d45411317d10d4f607accbb73458d2930098cf17f0d4a631ea3c89d",
+      "original_sha256": "388990757d45411317d10d4f607accbb73458d2930098cf17f0d4a631ea3c89d",
+      "unchanged": true
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7d12154836bda121d5b723f2bd953fa793d01dbac4d75b80b8e1e4561df3e4f0",
+      "original_sha256": "b1ddbe8e2459c97d8d635e0e36b565ee5630f37983000a217002cf2cd3469011",
+      "unchanged": false
+    },
+    {
+      "path": "run-studio.sh",
+      "sha256": "e4cefa491ccefc84874b6ec1e1d9870729d0ddea76b46ff479abb5312b86beb4",
+      "original_sha256": "e4cefa491ccefc84874b6ec1e1d9870729d0ddea76b46ff479abb5312b86beb4",
+      "unchanged": true
+    },
+    {
+      "path": "sample-data/election.json",
+      "sha256": "e7d4d6fb0a80a66fb0d363887fb609b27abf542af05b4df6cfe08fdf88b3bdb4",
+      "original_sha256": "9b1d1fdff9fad0393309f9813d4d5e9489004bf9a91378384b40833b5d3aaf4e",
+      "unchanged": false
+    },
+    {
+      "path": "sample-data/precincts.geojson",
+      "sha256": "93bbdd691d5ecf820bf311fe6a5df465dd040091e412a46779f68b34d7e9bd80",
+      "original_sha256": "93bbdd691d5ecf820bf311fe6a5df465dd040091e412a46779f68b34d7e9bd80",
+      "unchanged": true
+    },
+    {
+      "path": "sample-data/results-long.csv",
+      "sha256": "05745470f5eccae8bb5bda955436d24b97c50340dfc68cb6a029e9edc4e56ba2",
+      "original_sha256": "05745470f5eccae8bb5bda955436d24b97c50340dfc68cb6a029e9edc4e56ba2",
+      "unchanged": true
+    },
+    {
+      "path": "sample-data/results-wide.csv",
+      "sha256": "9d763f2a86a6e8bace0c2add63891369d77580d432b1b4bce9ebeac6d5249a0b",
+      "original_sha256": "9d763f2a86a6e8bace0c2add63891369d77580d432b1b4bce9ebeac6d5249a0b",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/render-project.tsx",
+      "sha256": "2d1b8e3af94bd63814b0d4306f8571b4984a2f44e04c6aad193553c449be3bfa",
+      "original_sha256": "2d1b8e3af94bd63814b0d4306f8571b4984a2f44e04c6aad193553c449be3bfa",
+      "unchanged": true
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "8f591d776a6bc2e73a3d98f09c98509cf65bdd7a2500e7b2548fa52fe7bad452",
+      "original_sha256": "8f591d776a6bc2e73a3d98f09c98509cf65bdd7a2500e7b2548fa52fe7bad452",
+      "unchanged": true
+    },
+    {
+      "path": "src/model/autosave.ts",
+      "sha256": "d206f7691ea5001351dbb90a8d527ad5a8bc40cf1b65c4916f1bb06bc3f691c9",
+      "original_sha256": "d206f7691ea5001351dbb90a8d527ad5a8bc40cf1b65c4916f1bb06bc3f691c9",
+      "unchanged": true
+    },
+    {
+      "path": "src/model/derive.ts",
+      "sha256": "8ef1afb9775baba56ea098223e9231d841e8ecd0a8ca31ff2eb365dd120ac3c0",
+      "original_sha256": "8ef1afb9775baba56ea098223e9231d841e8ecd0a8ca31ff2eb365dd120ac3c0",
+      "unchanged": true
+    },
+    {
+      "path": "src/model/design.ts",
+      "sha256": "17fbff3ca63ba1da4a6a59007066df41fe285a36e281301c92de9e6e4226aedf",
+      "original_sha256": "17fbff3ca63ba1da4a6a59007066df41fe285a36e281301c92de9e6e4226aedf",
+      "unchanged": true
+    },
+    {
+      "path": "src/model/diagnostics.ts",
+      "sha256": "2241fcd504286c5f5a934d288686afb3bde9b36ee3ac473c17f1927ee73a807e",
+      "original_sha256": "2241fcd504286c5f5a934d288686afb3bde9b36ee3ac473c17f1927ee73a807e",
+      "unchanged": true
+    },
+    {
+      "path": "src/model/history.ts",
+      "sha256": "33344bb1c65d0e64ae375ff5e8bfb9725ec163f74d405ad24f0862481edadf00",
+      "original_sha256": "33344bb1c65d0e64ae375ff5e8bfb9725ec163f74d405ad24f0862481edadf00",
+      "unchanged": true
+    },
+    {
+      "path": "src/model/schema.ts",
+      "sha256": "31f8706c9a6a44e351957b3b252ef4c09e9a332dc94bfdbe6da273f3ce42aad9",
+      "original_sha256": "31f8706c9a6a44e351957b3b252ef4c09e9a332dc94bfdbe6da273f3ce42aad9",
+      "unchanged": true
+    },
+    {
+      "path": "src/model/types.ts",
+      "sha256": "9d91998797cd2ef6cf1629d21756429e5c9b6054aa0ba1b5d5e95576d1da91e1",
+      "original_sha256": "9d91998797cd2ef6cf1629d21756429e5c9b6054aa0ba1b5d5e95576d1da91e1",
+      "unchanged": true
+    },
+    {
+      "path": "src/render/MapRenderer.tsx",
+      "sha256": "40e1b915f5a8837c6818aadfbde4eafb9047355ed3fa32916ad70b0aa30b810f",
+      "original_sha256": "40e1b915f5a8837c6818aadfbde4eafb9047355ed3fa32916ad70b0aa30b810f",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "a64a85e8f7697a32a398aed8777b8a60add66f2f52a9a607c12d6173880ac481",
+      "original_sha256": "a64a85e8f7697a32a398aed8777b8a60add66f2f52a9a607c12d6173880ac481",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/DataImporter.tsx",
+      "sha256": "d9738c57c7d7299bad149830c6d8ca48f6bb18cfad167073b814bd27fed2a152",
+      "original_sha256": "d9738c57c7d7299bad149830c6d8ca48f6bb18cfad167073b814bd27fed2a152",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/DesignPanel.tsx",
+      "sha256": "376904a3f159b643e255be6bf20b6dcabaf53a6206d5c4eb520877bae9a6753f",
+      "original_sha256": "376904a3f159b643e255be6bf20b6dcabaf53a6206d5c4eb520877bae9a6753f",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/DiagnosticsPanel.tsx",
+      "sha256": "8cdde9711da01745a98cf7bef97bd3f1c0d59975f1995fa6816668c68be2205b",
+      "original_sha256": "8cdde9711da01745a98cf7bef97bd3f1c0d59975f1995fa6816668c68be2205b",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/Inspector.tsx",
+      "sha256": "bd6d670c074b04ae34e7cac52405717a1c5f410a8bdfd84cea0770dce55c6975",
+      "original_sha256": "bd6d670c074b04ae34e7cac52405717a1c5f410a8bdfd84cea0770dce55c6975",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/LayersPanel.tsx",
+      "sha256": "1763a4d792cc91c396da74026c2b204d8955e6c68016508a04681bed5ba3fcaa",
+      "original_sha256": "1763a4d792cc91c396da74026c2b204d8955e6c68016508a04681bed5ba3fcaa",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/LibraryPanel.tsx",
+      "sha256": "a306664ed8709f04e5a2ab83e99fb141ce7b28a4bf61ea5f1b459f84f4d2a049",
+      "original_sha256": "a306664ed8709f04e5a2ab83e99fb141ce7b28a4bf61ea5f1b459f84f4d2a049",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/library.css",
+      "sha256": "0169368f78df20ca76ca6efcce4db140c3c72df0351e9d9a92c397f8216f7620",
+      "original_sha256": "0169368f78df20ca76ca6efcce4db140c3c72df0351e9d9a92c397f8216f7620",
+      "unchanged": true
+    },
+    {
+      "path": "src/ui/studio.css",
+      "sha256": "776cc10dced482470ff20ed600997f5755466ecd1348f9d296657422b52ef082",
+      "original_sha256": "776cc10dced482470ff20ed600997f5755466ecd1348f9d296657422b52ef082",
+      "unchanged": true
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "original_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "unchanged": true
+    },
+    {
+      "path": "tests/backend/test_api.py",
+      "sha256": "9b13c50d5cc656b00dbdba68c1839e642cc247cd5bafc04181b2fb1d569c18b8",
+      "original_sha256": "9b13c50d5cc656b00dbdba68c1839e642cc247cd5bafc04181b2fb1d569c18b8",
+      "unchanged": true
+    },
+    {
+      "path": "tests/backend/test_library.py",
+      "sha256": "b4267f734e91ef85410b981914d430b3660be730ccb8d15c77a76828b38ab57e",
+      "original_sha256": "a0ecc53ac86919a85c921a127db054612e69552f2679a1da60b3239b38279760",
+      "unchanged": false
+    },
+    {
+      "path": "tests/backend/test_processing.py",
+      "sha256": "aa0b4400a3dc9cdc84f7c4ae8babbe4091a87483dd4d8f077f322c36563c424c",
+      "original_sha256": "aa0b4400a3dc9cdc84f7c4ae8babbe4091a87483dd4d8f077f322c36563c424c",
+      "unchanged": true
+    },
+    {
+      "path": "tests/frontend/model.test.ts",
+      "sha256": "b64a69e55afe98053b7903cd952f2ee075d492840e07c55556618c307cf4e836",
+      "original_sha256": "b64a69e55afe98053b7903cd952f2ee075d492840e07c55556618c307cf4e836",
+      "unchanged": true
+    },
+    {
+      "path": "tests/frontend/renderer.test.tsx",
+      "sha256": "6ef67f1bf020dfe3dc47dc8238fb347014d04a36e37564b145660354a4f1892b",
+      "original_sha256": "6ef67f1bf020dfe3dc47dc8238fb347014d04a36e37564b145660354a4f1892b",
+      "unchanged": true
+    },
+    {
+      "path": "tsconfig.app.json",
+      "sha256": "01f189b47e3afa3e6cf889b39ae47d53a92d1fd1779a1adc6a8f25526ab3716f",
+      "original_sha256": "01f189b47e3afa3e6cf889b39ae47d53a92d1fd1779a1adc6a8f25526ab3716f",
+      "unchanged": true
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+      "original_sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+      "unchanged": true
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "e6873430eb3551cf5c6b0bcfaa8496ffca83be84292f408bc8b49bb2ebdef49f",
+      "original_sha256": "e6873430eb3551cf5c6b0bcfaa8496ffca83be84292f408bc8b49bb2ebdef49f",
+      "unchanged": true
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "11e36d2d1ed84e3bbf679d470a974956ea57f6d904912bff854c6ff98d062dd3",
+      "original_sha256": "ea95ea6af339bf40035e286aa4f0fe8ffeb365e18e06e91a0ccc30dc5bd517f5",
+      "unchanged": false
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "2509d9388103081299dc90f8d8836e8103f3f8f876cd3629e1e16348e384826e",
+      "original_sha256": "2509d9388103081299dc90f8d8836e8103f3f8f876cd3629e1e16348e384826e",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "id":"publication-dark-header","name":"Publication dark header",
+  "colors":{"page":"#F4F1E9","ink":"#182329","muted":"#677178","panel":"#FBFAF6","header":"#17242A","border":"#27343C","noData":"#D7D9D7","unopposed":"#A6AAAB"},
+  "fonts":{"serif":"Nimbus Roman, Georgia, serif","sans":"Nimbus Sans Narrow, Arial Narrow, sans-serif","data":"Nimbus Sans Narrow, Arial Narrow, sans-serif","title":{"weight":700},"body":{"size":12},"label":{"weight":700},"footnote":{"size":9}},
+  "border":{"color":"#27343C","width":1,"opacity":0.9}
+}

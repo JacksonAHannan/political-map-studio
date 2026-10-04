@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "kind": "template",
+  "id": "alabama-editorial",
+  "name": "Alabama editorial precinct map",
+  "page": {
+    "width": 1400,
+    "height": 1200,
+    "unit": "px",
+    "dpi": 220,
+    "background": "#F4F1E9",
+    "bleed": 0,
+    "safeMargin": 28,
+    "grid": {
+      "enabled": false,
+      "size": 10,
+      "snap": true
+    }
+  },
+  "layoutId": "alabama-precinct-layout",
+  "themeId": "publication-dark-header",
+  "elements": [
+    {
+      "id": "header",
+      "name": "Header",
+      "type": "header",
+      "frame": {
+        "x": 14,
+        "y": 14,
+        "width": 1372,
+        "height": 156
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 10,
+      "opacity": 1,
+      "background": "#17242A",
+      "padding": 58,
+      "title": "{{metadata.title}}",
+      "subtitle": "{{metadata.subtitle}}",
+      "kicker": "{{metadata.jurisdiction}} \u00b7 {{year}}",
+      "identifier": "{{metadata.electionType}}",
+      "titleStyle": {
+        "family": "Nimbus Roman, Georgia, serif",
+        "size": 32,
+        "weight": 700,
+        "color": "#FFFFFF"
+      },
+      "subtitleStyle": {
+        "family": "Nimbus Roman, Georgia, serif",
+        "size": 15,
+        "color": "#BFCBD0"
+      },
+      "kickerStyle": {
+        "family": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+        "size": 13,
+        "weight": 700,
+        "color": "#D9A928"
+      },
+      "identifierStyle": {
+        "family": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+        "size": 11,
+        "weight": 700,
+        "color": "#BFCBD0"
+      }
+    },
+    {
+      "id": "main-map",
+      "name": "Main map",
+      "type": "map",
+      "frame": {
+        "x": 36,
+        "y": 198,
+        "width": 800,
+        "height": 900
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 20,
+      "opacity": 1,
+      "projection": {
+        "type": "identity"
+      },
+      "zoom": 1,
+      "pan": [
+        0,
+        0
+      ],
+      "style": {
+        "mode": "winner-margin",
+        "continuous": true,
+        "buckets": 12,
+        "thresholds": [],
+        "minStrength": 0.45,
+        "maxStrength": 1,
+        "domain": [
+          0,
+          0.6
+        ],
+        "reverse": false,
+        "noDataColor": "#D7D9D7",
+        "unopposedColor": "#A6AAAB",
+        "precinctStroke": "#FFFFFF",
+        "precinctStrokeWidth": 0.55,
+        "precinctStrokeOpacity": 0.8,
+        "countyStroke": "#27343C",
+        "countyStrokeWidth": 1.1,
+        "countyStrokeOpacity": 0.8,
+        "exteriorStroke": "#101A20",
+        "exteriorStrokeWidth": 2.5,
+        "background": "transparent",
+        "antialias": true,
+        "clip": true
+      }
+    },
+    {
+      "id": "results",
+      "name": "Results panel",
+      "type": "results",
+      "frame": {
+        "x": 852,
+        "y": 202,
+        "width": 520,
+        "height": 338
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 30,
+      "opacity": 1,
+      "background": "#FBFAF6",
+      "border": {
+        "color": "#27343C",
+        "width": 1,
+        "radius": 0
+      },
+      "officeTitle": "GOVERNOR",
+      "electionLabel": "DEMOCRATIC PRIMARY \u00b7 2026",
+      "columns": [
+        {
+          "id": "candidate",
+          "label": "CANDIDATE / MAP COLOR",
+          "visible": true,
+          "width": 0.58,
+          "align": "left"
+        },
+        {
+          "id": "votes",
+          "label": "VOTES",
+          "visible": true,
+          "width": 0.22,
+          "align": "right"
+        },
+        {
+          "id": "share",
+          "label": "SHARE",
+          "visible": true,
+          "width": 0.2,
+          "align": "right"
+        },
+        {
+          "id": "status",
+          "label": "STATUS",
+          "visible": true,
+          "width": 0.15,
+          "align": "center"
+        }
+      ],
+      "rowHeight": 62,
+      "headerHeight": 74,
+      "candidateNameStyle": {
+        "family": "Nimbus Roman, Georgia, serif",
+        "size": 14,
+        "weight": 700,
+        "color": "#182329"
+      },
+      "dataStyle": {
+        "family": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+        "size": 11,
+        "color": "#182329"
+      },
+      "alternating": true,
+      "showTotal": true,
+      "voteDecimals": 0,
+      "percentDecimals": 1,
+      "ramp": {
+        "visible": true,
+        "segments": 7,
+        "min": 0,
+        "max": 0.6,
+        "width": 155,
+        "height": 7,
+        "ticks": [
+          0,
+          0.3,
+          0.6
+        ]
+      }
+    },
+    {
+      "id": "inset-huntsville",
+      "name": "Huntsville",
+      "type": "inset",
+      "frame": {
+        "x": 852,
+        "y": 592,
+        "width": 250,
+        "height": 185
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 25,
+      "opacity": 1,
+      "border": {
+        "color": "#5F6E75",
+        "width": 1,
+        "radius": 0
+      },
+      "label": "HUNTSVILLE",
+      "center": [
+        150,
+        175
+      ],
+      "geographicExtent": [
+        50,
+        50,
+        300,
+        320
+      ],
+      "scaleGroup": "metros",
+      "scaleMode": "identical",
+      "labelStyle": {
+        "family": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+        "size": 11,
+        "weight": 700,
+        "color": "#182329"
+      },
+      "labelBackground": "#F4F1E9",
+      "labelPadding": 3
+    },
+    {
+      "id": "inset-birmingham",
+      "name": "Birmingham",
+      "type": "inset",
+      "frame": {
+        "x": 1122,
+        "y": 592,
+        "width": 250,
+        "height": 185
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 25,
+      "opacity": 1,
+      "border": {
+        "color": "#5F6E75",
+        "width": 1,
+        "radius": 0
+      },
+      "label": "BIRMINGHAM",
+      "center": [
+        175,
+        350
+      ],
+      "geographicExtent": [
+        40,
+        200,
+        290,
+        470
+      ],
+      "scaleGroup": "metros",
+      "scaleMode": "identical",
+      "labelStyle": {
+        "family": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+        "size": 11,
+        "weight": 700,
+        "color": "#182329"
+      },
+      "labelBackground": "#F4F1E9",
+      "labelPadding": 3
+    },
+    {
+      "id": "inset-montgomery",
+      "name": "Montgomery",
+      "type": "inset",
+      "frame": {
+        "x": 852,
+        "y": 797,
+        "width": 250,
+        "height": 185
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 25,
+      "opacity": 1,
+      "border": {
+        "color": "#5F6E75",
+        "width": 1,
+        "radius": 0
+      },
+      "label": "MONTGOMERY",
+      "center": [
+        300,
+        350
+      ],
+      "geographicExtent": [
+        170,
+        210,
+        420,
+        480
+      ],
+      "scaleGroup": "metros",
+      "scaleMode": "identical",
+      "labelStyle": {
+        "family": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+        "size": 11,
+        "weight": 700,
+        "color": "#182329"
+      },
+      "labelBackground": "#F4F1E9",
+      "labelPadding": 3
+    },
+    {
+      "id": "inset-mobile",
+      "name": "Mobile",
+      "type": "inset",
+      "frame": {
+        "x": 1122,
+        "y": 797,
+        "width": 250,
+        "height": 185
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 25,
+      "opacity": 1,
+      "border": {
+        "color": "#5F6E75",
+        "width": 1,
+        "radius": 0
+      },
+      "label": "MOBILE",
+      "center": [
+        170,
+        575
+      ],
+      "geographicExtent": [
+        40,
+        430,
+        290,
+        700
+      ],
+      "scaleGroup": "metros",
+      "scaleMode": "identical",
+      "labelStyle": {
+        "family": "Nimbus Sans Narrow, Arial Narrow, sans-serif",
+        "size": 11,
+        "weight": 700,
+        "color": "#182329"
+      },
+      "labelBackground": "#F4F1E9",
+      "labelPadding": 3
+    },
+    {
+      "id": "source",
+      "name": "Source",
+      "type": "text",
+      "frame": {
+        "x": 44,
+        "y": 1145,
+        "width": 820,
+        "height": 26
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 40,
+      "opacity": 1,
+      "text": "{{metadata.source}}",
+      "style": {
+        "family": "Nimbus Roman, Georgia, serif",
+        "size": 10,
+        "color": "#677178",
+        "align": "left"
+      },
+      "wrap": true
+    },
+    {
+      "id": "footnote",
+      "name": "Footnote",
+      "type": "text",
+      "frame": {
+        "x": 880,
+        "y": 1145,
+        "width": 476,
+        "height": 26
+      },
+      "visible": true,
+      "locked": false,
+      "zIndex": 40,
+      "opacity": 1,
+      "text": "Gray = no candidate votes. Shade = winner margin.",
+      "style": {
+        "family": "Nimbus Roman, Georgia, serif",
+        "size": 10,
+        "color": "#677178",
+        "align": "right"
+      },
+      "wrap": true
+    }
+  ]
+}

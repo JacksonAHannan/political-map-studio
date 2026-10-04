@@ -1,0 +1,36 @@
+[project]
+name = "political-map-studio"
+version = "0.1.0"
+description = "Local-first vector political map editor and renderer"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116,<1",
+  "uvicorn>=0.35,<1",
+  "pydantic>=2.11,<3",
+  "python-multipart>=0.0.20,<1",
+  "geopandas>=1.1,<2",
+  "pandas>=2.2,<4",
+  "shapely>=2.1,<3",
+  "pyproj>=3.7,<4",
+  "pyogrio>=0.11,<1",
+  "cairosvg>=2.8,<3",
+  "pillow>=10,<13",
+  "typer>=0.16,<1"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.4,<9", "httpx>=0.28,<1"]
+
+[project.scripts]
+political-map = "political_map_studio.cli:app"
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["tests/backend"]
